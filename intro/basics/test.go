@@ -4,6 +4,9 @@ import (
 	_ "sync"
 )
 
+func returnMultipleValues(n int) (string, string, int){
+	return "souren", "ghosh", n
+}
 func main() {
 	fmt.Println("this is testing")
 
@@ -12,6 +15,9 @@ func main() {
 
 	var defined_type_assigned_var string = "Ghosh" //defined variable type
 	fmt.Println(defined_type_assigned_var)
+
+	var firstName, lastName, age := returnMultipleValues(30)
+	fmt.Println(firstName, lastName, age)
 
 }
 
