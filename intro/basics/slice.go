@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("new appended slice: ", y)
 
 	x = doAppend(x)
-	fmt.Printf("x changed to: ", x)
+	fmt.Println("x changed to: ", x)
 
 	//extract
 	extractValue(y)

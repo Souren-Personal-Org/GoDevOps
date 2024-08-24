@@ -17,7 +17,7 @@ func (r *Record) IncrAge() {
 }
 
 func main() {
-	john := Record{Name: "John"} //age will be 0 by default
+	john := &Record{Name: "John"} //age will be 0 by default
 	john.IncrAge()
 	fmt.Printf("%s \"s age %d", john.Name, john.Age)
 }
